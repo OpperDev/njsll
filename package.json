@@ -1,0 +1,33 @@
+{
+  "name": "@opperdev/njsll",
+  "version": "1.0.0",
+  "description": "NodeJS library for making mineraft launchers",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "minecraft",
+    "launcher"
+  ],
+  "author": "OpperDev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpperDev/njsll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OpperDev/njsll/issues"
+  },
+  "homepage": "https://github.com/OpperDev/njsll#readme",
+  "dependencies": {
+    "electron": "latest",
+    "electron-is": "latest",
+    "extract-zip": "latest",
+    "file-system": "latest",
+    "fs-extra": "latest",
+    "glob": "latest",
+    "request": "latest",
+    "child_process": "latest"
+  }
+}
