@@ -130,7 +130,7 @@ module.exports =  {
     getDirectory(src + '/libraries', 'jar', (err, res) => {
       if (err) console.log('Error', err)
       else {
-        let command = options.customCommand ? options.customCommand : appendSeparate([
+        let command = options.customCommand ? options.customCommand : apsep([
           getJavaCommand(),
           '-XX:-UseAdaptiveSizePolicy',
           '-XX:+UseConcMarkSweepGC',
@@ -139,7 +139,7 @@ module.exports =  {
           '-Dfml.ignorePatchDiscrepancies=true',
           options.ram,
           '-cp',
-          appendSeparate(res, ';') + ';' + src + '/minecraft.jar',
+          apsep(res, ';') + ';' + src + '/minecraft.jar',
           options.mainClass,
           '--username=' + options.username,
           '--accessToken', 'nothing',
